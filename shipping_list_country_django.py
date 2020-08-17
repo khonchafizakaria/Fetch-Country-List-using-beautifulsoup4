@@ -32,7 +32,7 @@ for i in soup.find_all('tr'):
     try:
         
         # You can remove this if statement if you don't need it.
-        if list[1] == 'GB' or list[1] == 'US' or list[1] == 'CA' or list[1] == 'FR' or list[1] == 'MA':
+        if list[1] in ['GB', 'US', 'CA', 'FR', 'MA']:
             available = True
         else:
             available = False
