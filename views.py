@@ -15,6 +15,7 @@ def create(request):
     
     # Save
     c = Country.objects.create(name=data["name"], alpha_2=data["alpha_2"], alpha_3=data["alpha_3"], available=data["available"])
+    # c = Country.objects.create(**data)
     c.save()
     
     # You have to return an HttpResponse or else Django will complain. 
